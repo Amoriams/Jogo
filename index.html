@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<title>MEGAMANIA-like — Shmup Espacial</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="wrap">
+  <div id="hud-top">
+    <div id="score">SCORE 000000</div>
+    <div id="level">NÍVEL 1</div>
+    <div id="lives">♥♥♥</div>
+  </div>
+
+  <div id="canvas-box">
+    <canvas id="game" width="240" height="320"></canvas>
+    <div id="overlay">
+      <h1 id="ov-title">MEGA<br>MANIA-LIKE</h1>
+      <p id="ov-sub">◀ ▶ move &nbsp;•&nbsp; ESPAÇO atira</p>
+      <button id="btn-start">▶ INICIAR</button>
+      <p class="hint">No celular: arraste ou use ◀ ▶ + FOGO</p>
+    </div>
+  </div>
+
+  <div id="fuel-box">
+    <div id="fuel-label">ENERGIA</div>
+    <div id="fuel-bar"><div id="fuel-fill"></div></div>
+  </div>
+
+  <div id="touch">
+    <button id="t-left" aria-label="Esquerda">◀</button>
+    <button id="t-fire" aria-label="Atirar">FOGO</button>
+    <button id="t-right" aria-label="Direita">▶</button>
+  </div>
+</div>
+<script src="sprites.js"></script>
+<script src="audio.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
